@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative URLs and paths</title>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home page</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main role="main">
+        <h1>Relative URLs and paths</h1>
+        <p><b>Paths: </b>Syntax we write to link and find files and folders on our computer.</p>  
+        <p><b>URL: </b>The address of a web page; the URL makes it possible for a computer to locate and open a web page on a different computer on the Internet. When it comes to paths for a website they also turn into URLs (paths = URLs when making websites).</p>
+        <h2>Folders</h2>
+        <h3>The root folder:</h3>
+        <p>The primary folder for the website (our GitHub repository). It's where our homepage resides, our index.html, filed DIRECTLY inside our root folder.</p>
+        <h3>Paths in the same folder:</h3>
+        <p>When creating a path within the same folder, we only need to specify the filename of that folder.
+        <ul><li>Ex: From index.html to plesiosaurs.html within same folder: path = plesiosaurs.html</li>
+        <li>Even if we’re inside a folder and need to get to another file in that same folder, we just write the name of it (write the name of the destination file). We can write "./" and get the same effect. The "./" is implicit, meaning it will be added if we don’t add it ourselves.</li></ul></p>
+        <h3>Moving into folders:</h3>
+        <p>To write a path that moves into a folder, we specify the folder name, followed by a forward slash, then the file name.
+        <ul><li>Ex: From index.html to tyrannosaurus.html (in dinosaurs folder):path = dinosaurs/tyrannosaurus.html</li>
+        <li>Sub-folder index: If a folder has its own index.html file, we don’t need to specify that in the path</li></ul></p>
+        <h3>Moving out of folders:</h3>
+        <p>When moving out of folders, we use ". . /", then follow all the rules above.
+        <ul><li>Ex: From apatosaurus.html to pterosaurs.html:
+        path = . . / pterosaurs.html</li>
+        <li>Ex #2: From apatosaurus.html to logo.svg:
+        path = . . / images/logo.svg</li>
+        <li>If you need to get out of multiple folders, just add more:
+        <ul><li>Out of 2 folders = . . / . . /</li>
+        <li>Out of 3 folders = . . / . . / . . /</li></ul></li></ul>
+        <h2>Relative vs. absolute paths:</h2>
+        <h3>Relative paths:</h3>
+        <p><ul><li>All of the paths we learned above are all relative to the location you’re currently in - called document relative.</li>
+        <li>If the path starts with nothing, it means “start where I am and go from here”.</li>
+        <li>If the path starts with ". . /", it means “go up one folder from where I am and go from here”.</li></ul></p>
+        <h3>Absolute paths:</h3>
+        <ul><li>Absolute paths are in relation to the top-level internet and URLs.</li>
+        <li>If we start a path with a protocol (http(s)), it means “start at the top level of the Internet, replacing everything, and work from there”.</li>
+        <li>If our website was hosted at the domain “prehistoric-animals.com”, we’d get the following paths:</li>
+        <ul><li>https://prehistoric-animals.com/</li>
+        <li>https:// prehistoric-animals.com/plesiosaurs.html</li>
+        <li>Etc.</li></ul></ul>
+        <h2>Protocol relative:</h2>
+        <ul><li>If we don’t want to write the protocol (https) we can just leave it off and the browser will automatically add it for us.</li>
+        <li>If we start a path with a / / , it means “start immediately after the protocol, replacing all domains, and work from there”.</li></ul>
+        <h2>Root relative:</h2>
+        <ul><li>If we only want to write paths within our domain but have more absolute-like paths, we can use root-relative paths.</li>
+        <li>If we start a path with /, it means “start at the root domain and work from there”</li></ul>
+        <h3>When do we use this stuff?:</h3>
+        <ol><li>In HTML links (href)</li>
+        <li>In image tags (src)</li>
+        <li>When linking CSS (href)</li>
+        <li>When using background-image in CSS</li>
+        </ol>
+        <h3>Paths on your computer:</h3>
+        <ul><li>/ - is the root of your computer’s hard drive
+        <li>/ / , or http:/ / will do nothing because you’re not on the web</li></ul>
+        
+
+  </main>
+  <footer role="contentinfo">
+  </footer>
+</body>
+</html>
