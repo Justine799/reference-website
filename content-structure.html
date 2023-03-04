@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to structure content on the page</title>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home page</a></li>
+            </ul>
+        </nav>
+    </header>
+      <main role="main">
+        <h1> How to structure content on the page</h1>
+    <section>
+        <h2>Content structure</h2>
+        <p>Organizing our HTML elements content within typical regions of a web page.</p>
+        <h3>Headers</h3> 
+        <p> Introductory elements of the header: </p>
+        </ul>
+        <li>Company logo</li>
+        <li>Title</li>
+        <li>Site name</li>
+        <li>Main naviguation</li>
+        <li>Also used within sections and articles to introduce the content for headings, subheadings, author, etc</li>
+        <li>(<)header(>)(<)/header(>) </li>
+        </ul>
+        <h3>Main</h3>
+        <ul>
+        <li> Content unique to each page, which means it's only used once on a page </li>
+        <li>Tells the browser that this is where the unique content is</li>
+        <li>(<)main(>)(<)/main(>)</li>
+        </ul>
+        <h3>Footer</h3>
+        <p>Elements of the footer:</p>
+        <ul>
+        <li>Copyright information</li><li>Site info</li><li>Company address</li><li>Company second website</li><li>Terms of services</li><li>Columns of links</li><li>Extra info about the company</li><li>(<)footer(>) (<)/footer(>)</li>
+        </ul>
+        <h3>Section</h3>
+        <p>Used to wrap around and group related pieces of content. Usually, each section has its own heading.</p>
+        <ul>
+        <li>(<)section(>) (<)/section(>)</li>
+        </ul>       
+        <h3>Article</h3>
+        <p>Represents a self-contained composition in a web page, which is intended to be independently distributable or reusable.</p>
+        <ul>
+        <li>Blog post</li><li>Product card</li><li>Interactive widget</li><li>(<)article(>)(<)/article(>)</li>
+        </ul>
+        <h3>Navigation</h3>
+        <p>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
+        <ul>
+        <li>(<)nav(>)(<)/nav(>)</li>
+        </ul>
+        <h3>Aside</h3>
+        <p>Represents a portion of a document whose content is only indirectly related to the document's main content (this content could be represented as a sidebar or in a section underneath the website - it is not in the Main tags)</p>
+        <ul>
+        <li>(<)aside(>)(<)/aside(>)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Generic elements</h2>
+        <ul> 
+        <li>Meaningless content</li>
+        <li>(<)div(>) = Block elements used to group elements together (adjust layout, CSS or behaviour JavaScript)</li>
+        <li>(<)span(>) = An inline container used to mark up a part of a text, or part of a document (wrap around a sentence, a few words, bold it, change font, make it abig bigger)</li>
+        </ul>
+        <h2>Attributes</h2>
+        <ul>
+        <li>HTML attributes provide additional information about HTML elements (extra info to make something work or give more info to later use elsewhere)</li>
+        <li>Allows us to target any HTML element within CSS or JavaScript</li>
+        <li>(<)a href=""(>) Link text (<)/a(>)</li>
+        <li>(<)p class=""(>) You can use a class multiple times throughout your HTML and attach it to different type of elements</li>
+        <li>(<)p id=""(>) Only allowed to use one unique identifier once in each HTML page</li>
+        </ul>
+    </section>
+    </main>
+    <footer role="contentinfo">
+    </footer>
+</body>
+</html>

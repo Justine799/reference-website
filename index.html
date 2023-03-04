@@ -10,16 +10,14 @@
 <header>
 <h1> Reference Website: Web Design I </h1>
 <!--This is where the main navigation is situated-->
-    <nav>
+    <nav role="navigation">
         <ul>
-            <li><a href="#naming-conventions">Naming conventions</a></li>
-            <li><a href="#components-of-websites">Components of creating a website</a></li>
             <li><a href="#repositories">How to create repositories on Github</a></li>
-            <li><a href="#tag-syntax">Tag syntax</a></li>
-            <li><a href="#structure-content-on-page">How to structure content on the page</a></li>
-            <li><a href="#links-to-paths">Links to paths</a></li>
-            <li><a href="#accessibility">Accessibility in the web</a></li>
-            <li><a href="#landmark-roles">Landmark roles</a></li>
+            <li><a href="tag-syntax.html" aria-label="Click here to learn more about tag syntax">Tag syntax</a></li>
+            <li><a href="content-structure.html" aria-label="Click here to learn more about content structure">How to structure content on the page</a></li>
+            <li><a href="links-to-paths.html" aria-label="Click here to learn more about links to paths">Links to paths</a></li>
+            <li><a href="accessibility-on-the-web.html" aria-label="Click here to learn more about accessibility in the web">Accessibility on the web</a></li>
+            <li><a href="landmark-roles.html" aria-label="Click here to learn more about landmark roles">Landmark roles</a></li>
         </ul>
     </nav>
 </header>
@@ -61,246 +59,12 @@
         <li>Update index.html file with other information and commit each time to push work up and save progress</li>
     </ol>
 </section>
-<section id="tag-syntax">
-    <h2>Tag syntax</h2>
-        <h3>Headers</h3> 
-            <h4>H1: Usually used for the title</h4>
-    <ul>
-        <li> (<)h1(>) Here goes the body copy (<)/h1(>) </li>
-        <li>Main header</li>
-        <li> Can only be entered once</li>
-    </ul>
-            <h4>H2 to H6 </h4>
-    <ul>
-        <li> (<)h2(>) (<)h3(>) (<)h4(>) (<)h5(>) (<)h6(>)</li>
-        <li>H2 is the subheader of h1, h3 is the subheader of h2, so on and so forth.</li>
-    </ul>
-            <h4>Paragraphs</h4>
-    <ul>
-        <li>(<)p(>) Here goes the paragraph text(<)/p(>) </li>
-    </ul>
-        <h3> Lists </h3>
-            <h4> Unordered lists</h4>
-    <ul>
-        <li> (<)ul(>)</li>
-        <li>The order of the items doesn't matter </li>
-        <li> (<)li(>) is nested inside of unordered list</li>
-        <li> You can have as many bullets as you want </li>
-    </ul>
-            <h4>Ordered lists</h4>
-    <ul>
-        <li> (<)ol(>)</li>
-        <li> The order of the items matter</li>
-        <li> (<)li(>) is nested inside of ordered list</li>
-        <li> You can have as many numbers as you want </li>
-    </ul>
-            <h4>Description lists</h4>
-    <ul>
-        <li> (<)dl(>)</li>
-        <li>Items that are categorized and used to describe a specific term</li>
-        <li> (<)dt(>) is nested inside, which is the name or description of the term</li>
-        <li> (<)dd(>), which is the description of term, is nested inside of (<)dt(>) </li>
-    </ul>
-        <h3> Quotes and citations</h3>
-    <ul>
-        <li> (<)q(>): Used to mark up quotes embedded in other elements, like a paragraph</li>
-        <li>(<)blockquote(>): Larger, more decorative way of displaying a quote</li>
-        <li> (<)cite(>): Marking the source of the quote </li>
-    </ul>
-        <h3> Phrasing elements </h3>
-    <ul>
-        <li> (<)em(>): Used to display emphasis (italicized)</li>
-        <li> (<)strong(>): Used to dipsplay lots of emphasis, strong importance or urgency (bold)
-        <li> (<)i(>): Used to represent a word in another language, a technical term, title (ex; chinese character, italian word, etc)</li>
-        <li> (<)b(>): Keyword (bold)</li>
-    </ul>
-        <h3> Links</h3>
-             <h4> How to create a hyperlink:</h4>
-    <ul>
-        <li> (<)a href=“”(>) Link text (<)/a(>) </li>
-        <li> The anchor tag : The opening (<)a(>) tells us where the link should start and the closing (<)/a(>) indicates where the link ends. </li> 
-To create a hyperlink, you must put the URL (link) between the quotation marks, and enter the clickable text before the closing anchor tag (where "Link text" is situated).</li>
-    </ul>
-            <h4>How to add an image:</h4>
-    <ul> 
-        <li> (<)img src“” alt=“” /(>) </li>
-        <li> Images in websites are not embedded in the website, but linked by the HTML document. </li>
-        <li>Images need two attributes to specify extra details about the image: the location of the image (image source) and the alternative content (description of content - content that would appear in case the image doesn't appear).</li>
-        <li> You must add the URL (link) in the first quotation marks, and the description of the content in the second quotation marks</li>
-        <li>Self-closing tag</li>
-    </ul>
-    <h3> Other</h3>
-    <ul> 
-        <li> (<)small(>): Decrease text size </li>
-    </ul>
-</section>
-<section id="structure-content-on-page">
-    <h2> How to structure content on the page</h2>
-        <h3>Generic elements</h3>
-    <ul> 
-        <li>Meaningless content</li>
-        <li>(<)div(>) = Block elements used to group elements together (adjust layout, CSS or behaviour JavaScript)</li>
-        <li>(<)span(>) = An inline container used to mark up a part of a text, or part of a document (wrap around a sentence, a few words, bold it, change font, make it abig bigger)</li>
-    </ul>
-        <h3>Attributes</h3>
-    <ul>
-        <li>HTML attributes provide additional information about HTML elements (extra info to make something work or give more info to later use elsewhere)</li>
-        <li>Allows us to target any HTML element within CSS or JavaScript</li>
-        <li>(<)a href=""(>) Link text (<)/a(>)</li>
-        <li>(<)p class=""(>) You can use a class multiple times throughout your HTML and attach it to different type of elements</li>
-        <li>(<)p id=""(>) Only allowed to use one unique identifier once in each HTML page</li>
-    </ul>
-        <h3>Content structure</h3>
-        <p>Organizing our HTML elements content within typical regions of a web page.</p>
-            <h4>Headers</h4> 
-        <p> Introductory elements of the header: </p>
-    </ul>
-        <li>Company logo</li>
-         <li>Title</li>
-         <li>Site name</li>
-         <li>Main naviguation</li>
-         <li>Also used within sections and articles to introduce the content for headings, subheadings, author, etc</li>
-         <li>(<)header(>)(<)/header(>) </li>
-    </ul>
-            <h4>Main</h4>
-    <ul>
-        <li> Content unique to each page, which means it's only used once on a page </li>
-        <li>Tells the browser that this is where the unique content is</li>
-        <li>(<)main(>)(<)/main(>)</li>
-    </ul>
-            <h4>Footer</h4>
-    <p>Elements of the footer:</p>
-    <ul>
-        <li>Copyright information</li><li>Site info</li><li>Company address</li><li>Company second website</li><li>Terms of services</li><li>Columns of links</li><li>Extra info about the company</li><li>(<)footer(>) (<)/footer(>)</li>
-    </ul>
-             <h4>Section</h4>
-    <p>Used to wrap around and group related pieces of content. Usually, each section has its own heading.</p>
-    <ul>
-        <li>(<)section(>) (<)/section(>)</li>
-    </ul>       
-            <h4>Article</h4>
-    <p>Represents a self-contained composition in a web page, which is intended to be independently distributable or reusable.</p>
-    <ul>
-        <li>Blog post</li><li>Product card</li><li>Interactive widget</li><li>(<)article(>)(<)/article(>)</li>
-    </ul>
-                <h4>Navigation</h4>
-    <p>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</p>
-    <ul>
-        <li>(<)nav(>)(<)/nav(>)</li>
-    </ul>
-                <h4>Aside</h4>
-    <p>Represents a portion of a document whose content is only indirectly related to the document's main content (this content could be represented as a sidebar or in a section underneath the website - it is not in the Main tags)</p>
-    <ul>
-        <li>(<)aside(>)(<)/aside(>)</li>
-    </ul>
-</section>
-<section id="links-to-paths">
-    <h2>Links to paths</h2> 
-        <h3>Link to an absolute URL path</h3>
-        <p> Absolute URLs offer a full address for a website or other resource on the internet.</p>
-    <ul>
-        <li> (<)a href="Full link"(>) Link to website (<)/a(>) </li>
-        </ul>
-        <h3>Link to a relative URL path</h3>
-        <p>A relative file path points to a file relative to the current page.</p>
-    <ul>
-        <li>(<)a href=" Partial link, without www.website.etc"(>) Page in same folder as index.html (<)/a(>)</li>
-        <li>(<)link src="../css/style.css" rel="stylesheet"(>) </li>
-    </ul>
-        <h3> Links to elements on the same page</h3>
-    <ul>
-    <li>(<)a href="#products"(>) Products (<)/a(>)</li> <em> = This is inserted in the main navigation.</em>
-    <li>(<)section id="products"(>)</li><em> = This is inserted at the start of each section.</em>
-    </ul>
-</section>
+
     <h2>Commenting</h2>
     <ul>
         <li>Comments are not displayed in the browser, but they can help document your HTML source code.</li>
     <li>(<)!-- Text is inserted here --(>)</li>
     </ul>
-<section id="accessibility">
-    <h2>Accessibility</h2>
-    <p> Web accessibility means that everyone, including users with visual, auditive, cognitive or physical disabilities will have an ideal experience and can access the information equally.</p>
-        <h3>WCAG principles</h3>
-    <p>All websites must comply with the Web Content Accessibility Guidelines 2.0. There are four principles that they have to follow:</p>
-<ol>
-    <li><strong>P</strong>erceivable <em>(must be able to discern content regardless of senses)</em></li>
-    <li><strong>O</strong>perable<em> (must be able to find, navigate and interact with the web content in multiple ways)</em></li>
-    <li><strong>U</strong>nderstandable <em> (the content must be understandable to its users)</em></li>
-    <li><strong>R</strong>obust <em>(must be developed using well-adapted web standards accessible across all browsers and assistive technologies)</em></li>
-</ol>
-        <h3>Ways of making a website more accessible</h3>
-    <p>Visual impairments:</p>
-        <ol>
-            <li>Allow text to be resized</li>
-            <li>Have good contrast in colours</li>
-            <li>Website must work well with screen readers</li>
-            <li>Use proper alt attributes</li>
-        </ol>
-    <p>Physical impairments:</p>
-        <ol>
-        <li>Make website keyboard accessible - ensure users have an alternative way to access information</li>
-        <li>Increase hit areas of links and buttons</li>
-        </ol>
-    <p>Auditory impairments:</p>
-        <ol>
-            <li>Provide text captions and subtitles during audios or videos on the website</li>
-            <li>Users may need closed caption while in a noisy room or when the language spoken is not their first language</li></ol>
-    <p>Cognitive impairments:</p>
-<ol>
-    <li>Make it clear where in the website the user is</li>
-    <li>Organize your content correctly</li>
-    <li>Clearly mark links</li>
-    <li>Use plain, simple language</li>
-</ol>
-</section>
-<section id="landmark-roles">
-    <h2>Landmark roles</h2>
-<p> Landmarks help assistive technology users orient themselves within a page and helps with the navigation of the website (can jump to various sections of a page).</p>
-<p>Headers:</p>
-<ul>
-    <li>(<)header role= “banner”(>)</li>
-    <li> Is used only once at the top of the page, and added to the primary header.</li>
-</ul> 
-<p>Navigation:</p>
-<ul>
-    <li>(<)nav role=”navigation”(>)</li>
-    <li>Is added to the primary navigation (<)nav(>)</li>
-</ul>
-<p>Main:</p>
-<ul>
-    <li>(<)main role=”main”(>)</li>
-    <li>Defining an element as being the main content of the page</li>
-    <li>Added to the (<)main(>)</li>
-</ul>    
-<p>Aside:</p>  
-<ul>
-    <li>(<)aside role=”complimentary”(>)</li>
-    <li>Defining an element as content related to the primary content.</li>
- </ul>   
- <p>Footer:</p>
- <ul>
-    <li>(<)footer role=”contentinfo”(>)</li>
-    <li>Defining an element as information about the content
-    copyright, terms, privacy policy.</li>
-</ul>   
-        <h3>Labeling links</h3>
-    <p>Adding aria-label attribute provides the user with a non-visual label that will be announced by screen readers.</p>
-        <ul><li>(<)a href=”#” aria-label=”Description of what the user will click through to would go here”>Read more(<)/a(>)
-        </ul></li>
-        <h3>Image descriptions</h3>
-    <p><em>Alt attribute has two purposes:</em></p>
-    <ol>
-        <li>To describe the picture if it doesn't download</li>
-        <li>To describe a picture to someone with visual disabilities, and who might use assistive technology</li>
-    </ol>
-        <h3>Skip links</h3>
-    <p>Skip links are placed at the very top of your page and offer users a way to jump to specific content. It also gives people who use keyboards access to jump to different specific areas on a page.</p>
-    <ul>
-        <li>Example : (<)li(>)(<)a href="#nav"(>)Name of specific area on the page(<)/a)>)(<)/li(>)</li>
-   <li>Afterwards, insert role in appropriate section : (<)nav role="navigation" id="nav"(>)(<)/nav(>)</li>
-</ul> 
-</section>
 </main>
 <footer>  
 </footer>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag syntax</title>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home page</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main role="main">
+        <h1>Tag syntax</h1>
+    <section>
+        <h2>Headers</h2> 
+        <h3>H1: Usually used for the title</h3>
+        <ul>
+        <li> (<)h1(>) Here goes the body copy (<)/h1(>) </li>
+        <li>Main header</li>
+        <li> Can only be entered once</li>
+        </ul>
+        <h3>H2 to H6 </h3>
+        <ul>
+        <li> (<)h2(>) (<)h3(>) (<)h4(>) (<)h5(>) (<)h6(>)</li>
+        <li>H2 is the subheader of h1, h3 is the subheader of h2, so on and so forth.</li>
+        </ul>
+        <h3>Paragraphs</h3>
+        <ul>
+        <li>(<)p(>) Here goes the paragraph text(<)/p(>) </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lists</h2>
+        <h3>Unordered lists</h3>
+        <ul>
+        <li>(<)ul(>)</li>
+        <li>The order of the items doesn't matter </li>
+        <li>(<)li(>) is nested inside of unordered list</li>
+        <li> You can have as many bullets as you want </li>
+        </ul>
+        <h3>Ordered lists</h3>
+        <ul>
+        <li>(<)ol(>)</li>
+        <li>The order of the items matter</li>
+        <li>(<)li(>) is nested inside of ordered list</li>
+        <li>You can have as many numbers as you want </li>
+        </ul>
+        <h3>Description lists</h3>
+        <ul>
+        <li>(<)dl(>)</li>
+        <li>Items that are categorized and used to describe a specific term</li>
+        <li>(<)dt(>) is nested inside, which is the name or description of the term</li>
+        <li>(<)dd(>), which is the description of term, is nested inside of (<)dt(>) </li>
+        </ul>
+    </section>
+    <article>
+        <h2> Quotes and citations</h2>
+        <ul>
+        <li> (<)q(>): Used to mark up quotes embedded in other elements, like a paragraph</li>
+        <li>(<)blockquote(>): Larger, more decorative way of displaying a quote</li>
+        <li> (<)cite(>): Marking the source of the quote </li>
+        </ul>
+    </article>
+    <article>
+        <h2>Phrasing elements</h2>
+        <ul>
+        <li>(<)em(>): Used to display emphasis (italicized)</li>
+        <li>(<)strong(>): Used to dipsplay lots of emphasis, strong importance or urgency (bold)
+        <li>(<)i(>): Used to represent a word in another language, a technical term, title (ex; chinese character, italian word, etc)</li>
+        <li>(<)b(>): Keyword (bold)</li>
+        </ul>
+    </article>
+    <section>  
+        <h2>Links</h2>
+        <h3>How to create a hyperlink:</h3>
+        <ul>
+        <li>(<)a href=“”(>) Link text (<)/a(>) </li>
+        <li>The anchor tag : The opening (<)a(>) tells us where the link should start and the closing (<)/a(>) indicates where the link ends. </li> 
+        To create a hyperlink, you must put the URL (link) between the quotation marks, and enter the clickable text before the closing anchor tag (where "Link text" is situated).</li>
+        </ul>
+        <h3>How to add an image:</h3>
+        <ul> 
+        <li> (<)img src“” alt=“” /(>) </li>
+        <li> Images in websites are not embedded in the website, but linked by the HTML document. </li>
+        <li>Images need two attributes to specify extra details about the image: the location of the image (image source) and the alternative content (description of content - content that would appear in case the image doesn't appear).</li>
+        <li> You must add the URL (link) in the first quotation marks, and the description of the content in the second quotation marks</li>
+        <li>Self-closing tag</li>
+        </ul>
+    </section>
+    <article>
+        <h2> Other</h2>
+        <ul><li>(<)small(>): Decrease text size</li></ul>
+    </article>
+    <footer role="contentinfo">
+    </footer>
+</body>
+</html>
