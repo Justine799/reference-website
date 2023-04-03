@@ -5,68 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landmark roles</title>
+    <link rel="stylesheet" href="/css/style.css">
  </head>
  <body>
  <header role="banner">
     <nav role="navigation">
-        <ul>
-            <li><a href="index.html">Home page</a></li>
-        </ul>
+        <a class="button" href="/index.html">Home page</a>
     </nav>
 </header>
   <main role="main">
     <h1>Landmark roles</h1>
         <p>Landmarks help assistive technology users orient themselves within a page and helps with the navigation of the website (can jump to various sections of a page).</p>
     <section>
+        <div>
         <p><b>Headers:</b></p>
         <ul>
-        <li>(<)header role= “banner”(>)</li>
+        <li>(<)header role= "banner"(>)</li>
         <li> Is used only once at the top of the page, and added to the primary header.</li>
         </ul> 
         <p><b>Navigation:</b></p>
         <ul>
-        <li>(<)nav role=”navigation”(>)</li>
+        <li>(<)nav role="navigation"(>)</li>
         <li>Is added to the primary navigation (<)nav(>)</li>
         </ul>
         <p><b>Main:</b></p>
         <ul>
-        <li>(<)main role=”main”(>)</li>
+        <li>(<)main role="main"(>)</li>
         <li>Defining an element as being the main content of the page</li>
         <li>Added to the (<)main(>)</li>
         </ul>    
         <p><b>Aside:</b></p>  
         <ul>
-        <li>(<)aside role=”complimentary”(>)</li>
+        <li>(<)aside role="complimentary"(>)</li>
         <li>Defining an element as content related to the primary content.</li>
         </ul>   
         <p><b>Footer:</b></p>
         <ul>
-        <li>(<)footer role=”contentinfo”(>)</li>
+        <li>(<)footer role="contentinfo"(>)</li>
         <li>Defining an element as information about the content
         copyright, terms, privacy policy.</li>
         </ul>   
-    </section>
-    <section>
+        </div>
+        <div>
         <h2>Labeling links</h2>
         <p>Adding an aria-label attribute provides the user with a non-visual label that will be announced by screen readers.</p>
-        <ul><li>(<)a href=”#” aria-label=”Description of what the user will click through to would go here”>Read more(<)/a(>)
+        <ul><li>(<)a href="#" aria-label="Description of what the user will click through to would go here">Read more(<)/a(>)
         </ul></li>
-    </section>
-    <section>
+        </div>
+        <div>
         <h2>Image descriptions</h2>
         <p><em>Alt attribute has two purposes:</em></p>
         <ol>
         <li>To describe the picture if it doesn't download</li>
         <li>To describe a picture to someone with visual disabilities, and who might use assistive technology</li>
         </ol>
-    </section>
-    <section>
+        </div>
+        <div>
         <h2>Skip links</h2>
         <p>Skip links are placed at the very top of your page and offer users a way to jump to specific content. It also gives people who use keyboards access to jump to different specific areas on a page.</p>
         <ul>
-        <li>Example : (<)li(>)(<)a href="#nav"(>)Name of specific area on the page(<)/a)>)(<)/li(>)</li>
-        <li>Afterwards, insert role in appropriate section : (<)nav role="navigation" id="nav"(>)(<)/nav(>)</li>
+        <li>Example: (<)li(>)(<)a href="#nav"(>)Name of specific area on the page(<)/a)>)(<)/li(>)</li>
+        <li>Afterwards, insert role in appropriate section: (<)nav role="navigation" id="nav"(>)(<)/nav(>)</li>
         </ul> 
+        </div>
     </section>
   </main>
 <footer role="contentinfo">

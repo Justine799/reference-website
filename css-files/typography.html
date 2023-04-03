@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography in the web</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+          <a class="button" href="/index.html">Home page</a>
+        </nav>
+    </header>
+    <main role="main">
+    <h1> Typography on the Web</h1>
+    <h2>Styling text</h2>
+    <small>This section is for styling text.</small>
+    <section class="text">
+        <div>
+        <h3>font-family:</h3>
+        <p>When specifying a font family that has a space in its name, we must surround it with quotes. It’s also a good idea to provide a stylistic backup: serif, sans-serif, monospace, cursive, etc.</p>
+        </div>
+        <div>
+        <h3>font-properties:</h3>
+        <h4>font-size;</h4>
+        <ul>
+        <li>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</li>
+        <li>Ex: 2rem, 1.125em, 24px</li>
+        </ul>
+        <h4>font-weight;</h4>
+        <ul>
+        <li>Sets how thick or thin characters in text should be displayed</li>
+        <li>Ex: bold, normal, 700</li>
+        </ul>
+        <h4>font-style;</h4>
+        <ul>
+        <li>Specifies font style for text</li>
+        <li>Ex: italic or normal</li>
+        </ul>
+        <h4>line-height;</h4>
+        <ul>
+        <li>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</li>
+        <li>Ex: 1.5</li>
+        </ul>
+        </div>
+        <div>
+        <h3>text-decorations:</h3>
+        <h4>text-transform;</h4>
+        <ul>
+        <li>Change capitalization such as uppercase, lowercase, capitalize. It’s a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</li>
+        <li>Ex: uppercase, lowercase, capitalize</li>
+        </ul>
+        <h4>text-decoration;</h4>
+        <ul>
+        <li>Specifies the decoration added to text. The onsly things in a website that should be underlined are links.</li>
+        <li>Ex: none, underline, line-through, overline</li>
+        </ul>
+        <h4>text-align;</h4>
+        <ul>
+        <li>Specifies the horizontal alignment of text in an element</li>
+        <li>Ex: left, center (American spelling), right, justify</li>
+        </ul>
+        <h4>text-indent;</h4>
+        <ul>
+        <li>Indent the first line of text like traditionally printed materials</li>
+        <li>Ex: 1rem, 2em, 20px, 25% </li>
+        </ul>
+        <h4>text-shadow;</h4>
+        <ul>
+        <li>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</li>
+        <li>text-shadow: 2px 2px #ff0000;</li>
+        </ul>
+        </div>
+        </section>
+        <section class="links">
+        <div>
+        <h2>Styling links</h2>
+        <p>This section is for styling links. They can be styled with any CSS property (e.g. color, font-family, background, etc.). They also have a bunch of states that we can style when a user interacts with them....</p>
+        <p>Example of a styled link:</p>
+        <a href="#link-button">I am a link</a>
+          <p>Additional examples:</p>
+          <ul>
+            <li><a class="one" href="typography.html" target="_blank">This link changes color</a></li>
+            <li><a class="two" href="typography.html" target="_blank">This link changes font-size</a></li>
+            <li><a class="three" href="typography.html" target="_blank">This link changes background-color</a></li>
+            <li><a class="four" href="typography.html" target="_blank">This link changes font-family</a></li>
+            <li><a class="five" href="typography.html" target="_blank">This link changes text-decoration</a></li>
+          </ul>
+      </section> 
+      <section id="link-button">
+        <h2>Link Button</h2>
+        <p>A link styled as a button:</p>
+        <a class="button" href="googe.com" target="_blank">Button</a> 
+        <h2>How to embed Google fonts:</h2>
+        <ol>
+        <li>Open Google fonts</li>
+        <li>Select desired font and style</li>
+        <li>Copy the code into the head of your html pages in order to embed the font</li>
+      </ol>
+      </section>  
+      <section>
+      <h2>States for links</h2>
+      <p>
+      <ul>
+      <li><strong>:link :</strong> For styling the default link state</li>
+      <li><strong>:visited :</strong> For styling the link after it’s been visited by the user</li>
+      <li><strong>:hover :</strong>For styling the link when the mouse is sitting over it
+      <li><strong>:focus :</strong> For styling the link when the keyboard has tab-focused it</li>
+      <li><strong>:active :</strong>For styling the link when the mouse button is pressed down on it</li>
+      </ul>
+      <p>It’s important that these link states go in this direction: link, visited, hover, focus, active. </p>
+</section>
+
+
+</body>
+</html>

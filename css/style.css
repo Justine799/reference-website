@@ -1,0 +1,132 @@
+
+html {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Lato, sans-serif;
+    color: #222;
+    line-height: 1.5;
+    font-size: 100%;
+    background-color: lavender;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Holtwood-One-SC", serif;
+    font-size: 300%;
+    color: maroon;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Holtwood-One-SC", serif;
+    text-decoration: underline;
+}
+
+img {
+    width: 30%;
+    display: inline-block;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: black;
+}
+
+a.button:link,
+a.button:visited {
+    border: 2px solid maroon;
+    color: black;
+    padding: 10px 20px;
+}
+
+a.button:hover,
+a.button:active,
+a.button:focus {
+    background-color: maroon;
+    color: silver;
+    text-decoration: none;
+}
+
+nav {
+  display: block; 
+}
+
+ol li {
+    line-height: 2.5;
+}
+
+h3 {
+    color: brown;
+}
+
+h3 + p {
+    font-weight: bold;
+}
+
+a.one:link {
+    color: brown;
+}
+
+a.one:visited {
+    color: maroon;
+}
+
+a.one:hover {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+a.two:link {
+    color: brown;
+}
+
+a.two:hover {
+    color: maroon;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+a.three:link {
+    color: maroon;
+}
+
+a.three:hover {
+    color: white;
+    background-color: maroon;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+a.four:link {
+    color: maroon;
+}
+
+a.four:hover {
+    font-family: Courrier, serif;
+    color: maroon;
+    text-decoration: none;
+}
+
+a.five:link {
+    color: maroon;
+}
+
+a.five:hover {
+    text-decoration: line-through;
+    color: maroon;
+}
+

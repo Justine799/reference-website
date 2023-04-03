@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The box model</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <a class="button" href="/index.html">Home page</a>
+        </nav>
+    </header>
+    <main role="main">
+    <h1> The box model</h1>
+    <h2>What is the CSS box model?</h2>
+    <p>The box model is a box that wraps around every HTML element. It's made up of four parts:</p>
+    <ol>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#padding">Padding</a></li>
+        <li><a href="#border">Border</a></li>
+        <li><a href="#margin">Margin</a></li>
+    </ol>
+    <img src="/images/box_model.png" alt="Image of a box model"> 
+    <section id="content">
+    <h3>Content</h3>
+    <p>It's the stuff people see in the browser, the information that is presented to people (the rest is how it is presented). The content defines the basic box.</p>
+    </section>
+    <section id="padding">
+    <h3>Padding</h3>
+    <p>Adds spacing inside the box, and pushes the edge of the box away from the content (the background color is visible with the padding). It is often used to give the content some breathing room.</p>
+    </section>
+    <section id="border">
+    <h3>Border</h3>
+    <p>At the edge of the padding is a stroke around the edges of the box called the border. This is where the background color stops.</p>
+    </section>
+    <section id="margin">
+    <H3>Margin</H3>
+    <p>Outside the box is the margin, a transparent layer pushing other boxes away. The margin is the space around an element that separates it from other elements. Margins can have positive or negative values.</p>
+    <ul>
+        <li>We can specify margin and padding with their individual property, but it's often easier to use the shorthand version.</li>
+        <li>Start at the top and make your way clockwise around the box (top, right, bottom, left).</li>
+    </ul>
+    </section>
+</body>
+</html>

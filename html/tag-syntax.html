@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tag syntax</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header role="banner">
         <nav role="navigation">
-            <ul>
-                <li><a href="index.html">Home page</a></li>
-            </ul>
+            <a class="button" href="/index.html">Home page</a>
         </nav>
     </header>
-  <main role="main">
+        <main role="main">
         <h1>Tag syntax</h1>
-    <section>
+        <img src="/Images/simple-p-tag.png" alt="Example of a simple HTML tag" width="30%"/>
+    <section class="elements">
+        <div>
         <h2>Headers</h2> 
         <h3>H1: Usually used for the title</h3>
         <ul>
-        <li> (<)h1(>) Here goes the body copy (<)/h1(>) </li>
+        <li>(<)h1(>) Here goes the body copy (<)/h1(>)</li>
         <li>Main header</li>
         <li> Can only be entered once</li>
         </ul>
         <h3>H2 to H6 </h3>
         <ul>
-        <li> (<)h2(>) (<)h3(>) (<)h4(>) (<)h5(>) (<)h6(>)</li>
-        <li>H2 is the subheader of h1, h3 is the subheader of h2, so on and so forth.</li>
+        <li>(<)h2(>) (<)h3(>) (<)h4(>) (<)h5(>) (<)h6(>)</li>
+        <li>H2 is the subheader of h1, h3 is the subheader of h2, so on and so forth</li>
         </ul>
         <h3>Paragraphs</h3>
         <ul>
         <li>(<)p(>) Here goes the paragraph text(<)/p(>) </li>
         </ul>
-    </section>
-    <section>
+        </div>
+        <div>
         <h2>Lists</h2>
         <h3>Unordered lists</h3>
         <ul>
@@ -57,26 +58,29 @@
         <li>(<)dt(>) is nested inside, which is the name or description of the term</li>
         <li>(<)dd(>), which is the description of term, is nested inside of (<)dt(>) </li>
         </ul>
-    </section>
+        </div>
+        </section>
     <article>
-        <h2> Quotes and citations</h2>
+        <h2>Quotes and citations</h2>
         <ul>
-        <li> (<)q(>): Used to mark up quotes embedded in other elements, like a paragraph</li>
-        <li>(<)blockquote(>): Larger, more decorative way of displaying a quote</li>
-        <li> (<)cite(>): Marking the source of the quote </li>
+        <li><q>(<)q(>): Used to mark up quotes embedded in other elements, like a paragraph</q></li>
+        <li><blockquote>(<)blockquote(>): Larger, more decorative way of displaying a quote</blockquote</li>
+        <li><cite>(<)cite(>): Marking the source of the quote</cite></li>
         </ul>
     </article>
     <article>
         <h2>Phrasing elements</h2>
         <ul>
-        <li>(<)em(>): Used to display emphasis (italicized)</li>
-        <li>(<)strong(>): Used to dipsplay lots of emphasis, strong importance or urgency (bold)
-        <li>(<)i(>): Used to represent a word in another language, a technical term, title (ex; chinese character, italian word, etc)</li>
-        <li>(<)b(>): Keyword (bold)</li>
+        <li><em>(<)em(>)</em>: Used to display emphasis (italicized)</li>
+        <li><strong>(<)strong(>)</strong>: Used to display lots of emphasis, strong importance or urgency (bold)
+        <li><i>(<)i(>)</i>: Used to represent a word in another language, a technical term, title (ex; chinese character, italian word, etc)</li>
+        <li><b>(<)b(>)</b>: Keyword (bold)</li>
         </ul>
     </article>
-    <section>  
+    <section class="links">  
+        <div>
         <h2>Links</h2>
+        <img src="/Images/What-is-a-Hyperlink.png" alt="Image of a hyperlink" width="30%"/>
         <h3>How to create a hyperlink:</h3>
         <ul>
         <li>(<)a href=“”(>) Link text (<)/a(>) </li>
@@ -85,23 +89,25 @@
         </ul>
         <h3>How to add an image:</h3>
         <ul> 
-        <li> (<)img src“” alt=“” /(>) </li>
-        <li> Images in websites are not embedded in the website, but linked by the HTML document. </li>
+        <li> (<)img src=“” alt=“” /(>) </li>
+        <li> Images in websites are not embedded in the website, but linked by the HTML document </li>
         <li>Images need two attributes to specify extra details about the image: the location of the image (image source) and the alternative content (description of content - content that would appear in case the image doesn't appear).</li>
         <li> You must add the URL (link) in the first quotation marks, and the description of the content in the second quotation marks</li>
         <li>Self-closing tag</li>
         </ul>
-    </section>
+        </div>
+        <div>
     <h2>Commenting</h2>
         <!--This is an example of a comment-->
         <ul>
-        <li>Comments are not displayed in the browser, but they can help document your HTML source code.</li>
         <li>(<)!-- Text is inserted here --(>)</li>
-        </ul></li>
+        <li>Comments are not displayed in the browser, but they can help document your HTML source code.</li>
         </ul>
+        </div>
     <article>
         <h2> Other</h2>
-        <ul><li>(<)small(>): Decrease text size</li>
+        <ul><li><small>(<)small(>): Decrease text size</small></li>
+        <li>The (<)figcaption(>) HTML element represents a caption or legend describing the rest of the contents of its parent (<)figure(>) element.</li>
         </ul>
     </article>
     <footer role="contentinfo">

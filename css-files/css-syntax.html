@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header role="banner">
+      <nav role="navigation">
+          <a class="button" href="/index.html">Home page</a>
+      </nav>
+  </header>
+    <main role="main">
+    <h1>CSS Syntax</h1>
+    <img src="/Images/css-syntax-image.png" alt="CSS syntax explanation" width="50%"/>
+    <p>A CSS rule consists of a selector and a declaration block, where properties are styled.</p>
+    <section class="syntax">
+    <div>
+     <h2>Elements</h2>
+    <ol>
+    <li><b>Rule set:</b> Composed of a selector and one/many delcarations surrounded by curly braces.</li>
+    <li><b>Selector:</b> Identifies which HTML element should be targeted for styling.</li>
+    <li><b>Declaration:</b> Assigns a value to a property, separated by a colon. Each declaration must end with a semi-colon.</li>
+    <li><b>Property:</b> The type of design you want to add, such as color, width, background color, border, etc.</li>
+    <li><b>Value:</b> Accepted value for the assigned property, such as blue, 30px, 50%, etc.</li>
+    </ol>
+    </div>
+    <div>
+    <h2>Tags syntax</h2>
+    <h3>Element selector:</h3>
+    <p>Select all the tags of the same type.
+    <ul>
+    <li>html {
+    background-color: #A68F97;
+    }
+    </li>
+    <li>img {
+    width: 100%;
+    }
+    </li></ul></p>
+    </div>
+    <div>
+    <h3>Targeting multiple elements:</h3>
+    <p>If you’d like to style more than one element at a time, you can use a comma to separate the tag names.
+    <ul>
+    <li>h1, h2, h3 {
+    font-family: sans-serif;
+    }
+    </li></ul></p>
+    </div>
+    <div>
+    <h3>Class selector (.):</h3>
+    <p>Select an element that has a class.
+    <ul>
+    <li>
+    .card {
+    background-color: #F2F2F2;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 1cm;
+    }</li>
+    <li>
+    .card-text {
+    padding: 0 1cm 1cm;
+    }</li></ul></p>
+    </div>
+    <div>
+    <h3>ID selector (#):</h3>
+    <p>Select an element that has an ID (you can only have one unique ID per page).
+    <ul>
+    <li>
+    #section-1 {
+    background-color: mistyrose;
+    }
+    </li></ul></p>
+    </div>
+    <div>
+    <h3>Descendant selector:</h3>
+    <p>Select an element that's a descendant of another element, which refers to elements nested within other elements. To create a descendant selector, we'll need to use two or more selectors separated by white space.
+    <ul>
+    <li>
+    nav a {
+    color: #fff;
+    }
+    </li>
+    <li>
+    ul li {
+    font-size: 1cm;
+    }
+    </li>
+    </ul>
+    </p>
+    <h3>Child selector (>):</h3>
+    <p>Select an element directly inside another element.
+    <ul>
+    <li>
+    div > h3 {
+    text-transform: uppercase;
+    }
+    </li>
+     </ul>
+    </p>
+    </div>
+    <div>
+    <h3>Adjacent sibling (+):</h3>
+    <p>Select an element immediately beside another element.
+    <ul>
+    <li>
+    h2 + p {
+    color: orchid;
+    }
+    </li>
+    </ul>
+    </p>
+    <h3>General sibling (~): </h3>
+    <p>Select an element that’s at the same level.
+    <ul>
+    <li>
+    h3 ~ a {
+    background-color: #000;
+    color: f2f2f2;
+    padding: 0.25 0.75;
+    }
+    </li>
+    </ul>
+    </p>
+    <h3>Combine multiple types of selectors:</h3>
+    <ul>
+    <li>
+    #section-1 strong {
+    color: green;
+    }
+    </li>
+    </ul>
+    <h3>Attribute ([]):</h3>
+    <p>Select an element by it’s attribute.
+    <ul>
+    <li>
+    a [target="_blank"] {
+    font-weight: bold;
+    color: #f80;
+    }
+    </li>
+    </ul>
+    </p>
+    </div>
+    <div>
+    <h3>Pseudo classes</h3>
+    <h4>:first-child</h4>
+    <p>Select the element when it’s the first inside its parent.
+    <ul>
+    <li>
+    ul li:first-child {
+    background-color: #ff4858;
+    }
+    </li>
+    </ul>
+    </p>
+    <h4>:last-child</h4>
+    <p>Select the element when it’s the last inside its parent.
+    <ul>
+    <li>
+    ul li:last-child {
+    background-color: #f29947;
+    }
+    </li>
+    </ul>
+    </p>
+    <h4>:nth-child ( )</h4>
+    <p>Select an element by it’s number.
+    <ul>
+    <li>
+    ul li:nth-child(3) {
+    background-color: #346f48;
+    }
+    </li>
+    </ul>
+    </p>
+    <h4>:first-of-type</h4>
+    <p>Select an element that’s the first of its kind within its parent.
+    <ul>
+    <li>
+    p:first-of-type {
+    background-color: purple;
+    }
+    </li>
+    </ul>
+    </p>
+    </div>
+</section>
+</body>
+</html>
