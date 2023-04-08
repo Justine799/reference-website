@@ -1,4 +1,9 @@
 
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
 html {
     box-sizing: border-box;
     display: flex;
@@ -13,13 +18,14 @@ html {
 
 h1 {
     font-family: "Holtwood-One-SC", serif;
-    font-size: 300%;
+    font-size: 400%;
     color: maroon;
     text-align: center;
 }
 
 h2 {
     font-family: "Holtwood-One-SC", serif;
+    font-size: 200%;
     text-decoration: underline;
 }
 
@@ -130,3 +136,162 @@ a.five:hover {
     color: maroon;
 }
 
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    justify-content: stretch:
+}
+
+.introduction {
+background-color: plum;
+padding: 1rem 1rem 3rem 1rem;
+margin-top: 3rem;
+}
+
+.html {
+background-color: plum;
+padding: 1rem 1rem 3rem 1rem; 
+margin-top: 3rem;
+}
+
+.css {
+background-color: plum;
+padding: 1rem 1rem 3rem 1rem;
+margin-top: 3rem;
+}
+
+.websites {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    background-color: plum;
+    padding: .5rem 3rem;
+    max-width: 70%;
+}
+
+.image img{
+    width: 70%;
+}
+
+.elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+    margin-top: 2rem;
+    max-width: 80%;
+}
+
+.syntax img {
+    width: 40%;
+    align-items: center;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+    max-width: 80%;
+}
+
+.image-link {
+    width: 100%;
+}
+
+.structure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.accessibility {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.folder {
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.repository {
+    background-color: plum;
+    max-width: 70%;
+    padding: 0.25rem 1rem;
+}
+
+.wcag {
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.landmark-roles {
+    background-color: plum;
+    padding: 0.25rem 1rem;
+    max-width: 50%;
+}
+
+.css-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+.syntax {
+    background-color: plum;
+    padding: 0.25rem 1rem;
+    max-width: 50%;
+}
+
+.typography {
+    background-color: plum;
+    padding: 0.25rem 1rem;
+    max-width: 70%;
+}
+
+.absolute-paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    justify-content: stretch:
+}
+
+.absolute-path {
+    margin-top: 3rem;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.relative-path {
+    margin-top: 3rem;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.same-page-elements {
+    margin-top: 3rem;
+    background-color: plum;
+    padding: 0.25rem 1rem;
+}
+
+.box-model {
+    background-color: plum;
+    padding: 0.25rem 1rem; 
+    margin-bottom: 3rem; 
+    max-width: 80%;
+}

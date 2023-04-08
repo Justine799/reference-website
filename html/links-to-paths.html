@@ -15,23 +15,29 @@
     </header>
   <main role="main">
         <h1>Links to paths</h1> 
-        <section>
+        <section class="paths">
+        <div class="absolute-path">
         <h2>Link to an absolute URL path</h2>
         <p> Absolute URLs offer a full address for a website or other resource on the internet.</p>
         <ul>
         <li>(<)a href="Full link"(>) Link to website (<)/a(>) </li>
         </ul>
+        </div>
+        <div class="relative-path">
         <h2>Link to a relative URL path</h2>
         <p>A relative file path points to a file relative to the current page.</p>
         <ul>
         <li>(<)a href=" Partial link, without www.website.etc"(>) Page in same folder as index.html (<)/a(>)</li>
         <li>(<)link src="../css/style.css" rel="stylesheet"(>) </li>
         </ul>
+        </div>
+        <div class="same-page-elements">
         <h2> Links to elements on the same page</h2>
         <ul>
         <li>(<)a href="#products"(>) Products (<)/a(>)</li><em> = This is inserted in the main navigation.</em>
         <li>(<)section id="products"(>)</li><em> = This is inserted at the start of each section.</em>
         </ul>
+        </div>
     </section>
     <footer role="contentinfo">
     </footer>
